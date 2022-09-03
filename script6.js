@@ -4,9 +4,12 @@ let array = [
   [-6, -7, 10],
 ];
 
-for (let i = 0; i < array.length; i++) {
-  for (let n = 0; n < array[i].length; n++)
-    if (array[i][n] >= 0) {
-      console.log(array[i][n]);
+for (let item of array) {
+  // console.log(item);
+  for (let x of item) {
+    // console.log(x);
+    if (x > 0) {
+      console.log(x);
     }
+  }
 }
